@@ -3,7 +3,6 @@
     "version": "0.1.0",
     "description": "A simple fluentd/fluent-bit transport for the pino logging library using @fluent-org/logger",
     "main": "dist/index.js",
-    "private": "false",
     "scripts": {
         "build": "tsc -p .",
         "dev": "tsc -w",

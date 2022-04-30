@@ -1,0 +1,25 @@
+{
+    "name": "@lukadriel/pino-fluent",
+    "version": "0.1.0",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc -p .",
+        "dev": "tsc -w",
+        "prod": "tsc -p . && yarn publish",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier --write \"src/**/*.ts\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@fluent-org/logger": "^1.0.8",
+        "commander": "^9.2.0",
+        "pino-abstract-transport": "^0.5.0",
+        "pump": "^3.0.0"
+    },
+    "devDependencies": {
+        "@types/pump": "^1.1.1"
+    }
+}

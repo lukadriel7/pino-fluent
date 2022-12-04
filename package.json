@@ -1,6 +1,6 @@
 {
     "name": "@lukadriel/pino-fluent",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "A simple fluentd/fluent-bit transport for the pino logging library using @fluent-org/logger",
     "main": "dist/index.js",
     "scripts": {
@@ -14,9 +14,9 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@fluent-org/logger": "^1.0.8",
-        "commander": "^9.2.0",
-        "pino-abstract-transport": "^0.5.0",
+        "@fluent-org/logger": "^1.0.10",
+        "commander": "^9.4.1",
+        "pino-abstract-transport": "^1.0.0",
         "pump": "^3.0.0"
     },
     "devDependencies": {

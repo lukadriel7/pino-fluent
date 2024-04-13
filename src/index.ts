@@ -13,9 +13,17 @@ export default async function (opts: TransportOptions) {
     if (opts && opts.disableAutoconnect) {
         await fluent.connect();
     }
-    return build(async function (source) {
-        for await (const obj of source) {
-            fluent.emit(obj);
+    return build(
+        async function (source) {
+            for await (const obj of source) {
+                await fluent.emit(obj);
+            }
+        },
+        {
+            async close(err) {
+                await fluent.flush();
+                await fluent.disconnect();
+            },
         }
-    });
+    );
 }

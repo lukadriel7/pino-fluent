@@ -15,11 +15,6 @@
     "license": "ISC",
     "dependencies": {
         "@fluent-org/logger": "^1.0.10",
-        "commander": "^9.4.1",
-        "pino-abstract-transport": "^1.0.0",
-        "pump": "^3.0.0"
-    },
-    "devDependencies": {
-        "@types/pump": "^1.1.1"
+        "pino-abstract-transport": "^1.0.0"
     }
 }
